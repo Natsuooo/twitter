@@ -7,8 +7,10 @@ gem 'unicorn'
 
 gem 'pg'
 
-gem 'bootstrap', '~> 4.1.1'
+#gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
+
+gem 'bootstrap-sass', '~> 3.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
