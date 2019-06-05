@@ -24,6 +24,7 @@ Rails.application.configure do
   else
     config.action_controller.perform_caching = false
 
+
     config.cache_store = :null_store
   end
 
@@ -31,7 +32,10 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :test
+  host = 'twitter.natsuo720.com' 
+  config.action_mailer.default_url_options = { host: 'twitter.natsuo720.com', protocol: 'https' }
 
   config.action_mailer.perform_caching = false
 
